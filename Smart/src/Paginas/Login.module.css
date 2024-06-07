@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+.conteiner {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 50px);
+    justify-content: center;
+    align-items:baseline;
+    margin-left: 20%;
+    background-color: rgba(255,255,255);
+}
+
+.titulo {
+    color: rgba(66, 162, 170, 1);
+    font-size: 3rem;
+    justify-content: left;
+  
+}
+
+.titulo1 {
+    color: rgba(136, 234, 240, 1);
+    font-size: 3rem;
+    justify-content: left;
+}
+
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255,255,255);
+    margin-top: 60px;
+
+    border-radius: 10px;
+}
+
+.campo {
+    background-color: rgba(255,255,255);
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 60px;
+    width: 160%;
+    height: 40px;
+}
+
+.botao {
+    font-family: "Krona One", sans-serif;;
+    background-color: rgba(66, 162, 170, 1);
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+    width:130px;
+    height: 65px;
+    margin-top: 60px;
+    border-color: rgba(66, 162, 170, 1);
+}
+
+.mensagem {
+    font-size: .9rem;
+    font-weight: 600;
+    margin-top: -6px;
+    margin-bottom: 1rem;  
+    color: red; 
+}
+
