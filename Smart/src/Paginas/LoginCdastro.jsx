@@ -11,12 +11,12 @@ import { useNavigate } from 'react-router-dom';
 import paisagem from '../assets/paisagem.svg';
 
 const schemaLogin = z.object({
+    email: z.string().min(10, 'Mínimo de 10 caracteres'),
     usuario: z.string().min(5, 'Mínimo de 5 caracteres').max(20, 'Máximo de 20 caracteres'),
     senha: z.string().min(8, 'Informe 8 caracteres').max(8, 'Máximo de 8 caracteres'),
 });
 
-export function Login() {
-
+export function LoginCD() {
     
     const navigate = useNavigate();
     const { register, handleSubmit, formState: { errors } } = useForm({
@@ -26,6 +26,7 @@ export function Login() {
     async function obterDadosFormulario(data) {
         try {
             const response = await axios.post('http://127.0.0.1:8000/api/token/', {
+                email: email.usuario,
                 username: data.usuario,
                 password: data.senha
             });
@@ -50,6 +51,17 @@ export function Login() {
             <form className={estilos.formulario} onSubmit={handleSubmit(obterDadosFormulario)}>
                 <p className={estilos.titulo}>Connect</p>
                 <p className={estilos.titulo1}>Map</p>
+
+                <input
+                    {...register('email')}
+                    className={estilos.campo}
+                    placeholder="Email"
+                />
+                {errors.email && (
+                    <p className={estilos.mensagem}>{errors.usuario.message}</p>
+                )}
+
+
                 <input
                     {...register('usuario')}
                     className={estilos.campo}
