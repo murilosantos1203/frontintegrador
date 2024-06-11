@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
-
 .titulo {
     color: rgba(66, 162, 170, 1);
     font-size: 7rem;
@@ -55,12 +52,4 @@
 
 .logowebsite {
     margin-right: auto;
-}
-
-.banner{
-    width: 80%;
-    margin-top: 3%;
-    margin-left: 10%;
-    display: flex;
-    justify-content: center;
 }

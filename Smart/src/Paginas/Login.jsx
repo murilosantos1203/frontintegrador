@@ -12,7 +12,7 @@ import paisagem from '../assets/paisagem.svg';
 
 const schemaLogin = z.object({
     usuario: z.string().min(5, 'Mínimo de 5 caracteres').max(20, 'Máximo de 20 caracteres'),
-    senha: z.string().min(8, 'Informe 8 caracteres').max(8, 'Máximo de 8 caracteres'),
+    senha: z.string().min(5, 'Informe 5 caracteres').max(8, 'Máximo de 8 caracteres'),
 });
 
 export function Login() {

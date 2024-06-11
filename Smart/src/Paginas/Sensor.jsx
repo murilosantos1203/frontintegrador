@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import estilos from './Sensor.module.css';
 import { Link } from 'react-router-dom'; 
+import { Menu } from '../Componentes/Menu';
 
 export function Sensor() {
     const [sensores, setSensores] = useState([]);
@@ -37,8 +38,11 @@ export function Sensor() {
     }
 
     return (
+        
+        <div>
+             <Menu />
         <div className={estilos.container}>
-            <h1>Lista de Sensores</h1>
+            <p className={estilos.logolista}>Lista de Sensores</p>
             <table className={estilos.table}>
                 <thead>
                     <tr className={estilos.headerRow}>
@@ -65,6 +69,7 @@ export function Sensor() {
                     ))}
                 </tbody>
             </table>
+        </div>
         </div>
     );
 }

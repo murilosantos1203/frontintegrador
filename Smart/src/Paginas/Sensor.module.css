@@ -1,39 +1,59 @@
-.conteiner {
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+.container {
     display: flex;
-    height: 450px;
     justify-content: center;
     align-items: center;
-    
+    flex-direction: column;
+    margin-top: 50px;
 }
 
 h1 {
-    color: var(--roxo-claro);
-    align-self: center;
+    color: rgba(136, 234, 240, 1);
+    font-family: 'Questrial', sans-serif;
+    font-size: 100px;
+    margin-bottom: 20px;
 }
 
 table {
-    background-color: var(--cinza-claro);
-    padding: 10px;
-    border-radius: 10px;
-    font-size: 16px;
-    border: 1px solid var(--roxo-claro);
-
-    width: 100%;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin-left:50px ;
-
+    margin-top: 2%;
+    font-family: 'Questrial', sans-serif;
+    background-color: rgb(255, 255, 255);
+    padding: 30px; /* Increased padding */
+    border-radius: 30px; /* Rounded corners */
+    font-size: 70px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 th, td {
-    border: 1px solid var(--roxo-claro); /* Define as bordas para células */
-    padding: 8px; /* Adiciona padding às células */
-    text-align: left; /* Alinha o texto à esquerda */
+    border: 1px solid rgba(66, 162, 170, 1);
+    padding: 20px; /* Increased padding */
+    text-align: left;
 }
 
 tr {
-    border: 2px solid var(--roxo-claro); /* Define as bordas para as linhas */
+    border: 1px solid rgba(66, 162, 170, 1);
 }
 
+th {
+    background-color: rgba(66, 162, 170, 1);
+    color: rgba(136, 234, 240, 1);
+}
 
+a {
+    color: rgba(66, 162, 170, 1);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: darkslategray;
+}
+
+.logolista{
+    font-family: 'Questrial', sans-serif;
+    font-size: 90px;
+    margin-top: 3%;
+}

@@ -11,20 +11,21 @@ import { AlterarSensor } from '../Paginas/AlterarSensor';
 
  export function Rotas() {
     return (
-        <Routes>
+    <Routes>
 
-        <Route path='/' element={ <Login /> } />
-        <Route path="caduser" element ={<LoginCD/>}/>
-        <Route path='inicial' element={ <Inicial /> } >
-            <Route index element={ <Sensor /> } />
+            <Route path='/' element={ <Login /> } />        
+            <Route path='caduser' element={ <LoginCD/> } />
+            <Route path='inicial' element={ <Inicial /> } />
+            <Route path='sensores' element={ <Sensor /> } />
             <Route path='cadsensor' element={ <CadastrarSensor /> } />
             <Route path='localizacao' element={ <Localizacao /> } />
             <Route path='filtro' element={<Filtro />} />        
             <Route path="alterar-sensor/:id" element={<AlterarSensor />} />
             
-        </Route>
 
     </Routes>
+
+   
 )
 }
 
