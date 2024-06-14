@@ -16,7 +16,7 @@ export function Inicial() {
             <li><a href="localizacao">Mapa</a></li>
             <li><a href="sensores">Sensores</a></li>
             <li><a href="/">Login</a></li>
-          <li><a href="#">Sair</a></li>
+          <li><a href="/">Sair</a></li>
         </ul>
       </div>
     );
